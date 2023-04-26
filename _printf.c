@@ -10,7 +10,7 @@ va_list para_list;
 int i = 0, length = 0, j;
 group argums[] = {
 	{"%c", print_char}, {"%i", print_int},
-       	{"%d", print_dec}, {"%%", print_percent}
+	{"%d", print_dec}, {"%%", print_percent}
 	};
 if (format == NULL)
 return (-1);
