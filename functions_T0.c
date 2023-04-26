@@ -41,8 +41,8 @@ return (i);
 }
 
 /**
-* print_percent - print percent symbol
-* Return: 1
+ * print_percent - print percent symbol
+ * Return: 1
 */
 int print_percent(void)
 {
