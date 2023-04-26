@@ -9,7 +9,7 @@ int print_int(va_list params)
 int n1, number, mod, digit, power10, i;
 i = 1;
 power10 = 1;
-n1 = va_arg(args, int);
+n1 = va_arg(params, int);
 mod = n1 % 10;
 number = n1;
 if (mod < 0)
@@ -18,7 +18,7 @@ _putchar(45);
 n1 = -n1;
 number = -number;
 mod = -mod;
-i++
+i++;
 }
 if (number > 0)
 {
@@ -50,7 +50,7 @@ int print_dec(va_list params)
 int n2, number2, mod2, digit2, power10, j;
 j = 1;
 power10 = 1;
-n2 = va_arg(args, int);
+n2 = va_arg(params, int);
 mod2 = n2 % 10;
 n2 = n2 / 10;
 number2 = n2;
@@ -60,7 +60,7 @@ _putchar(45);
 n2 = -n2;
 number2 = -number2;
 mod2 = -mod2;
-j++
+j++;
 }
 if (number2 > 0)
 {

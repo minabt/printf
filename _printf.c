@@ -8,10 +8,9 @@ int _printf(const char *format, ...)
 {
 va_list para_list;
 int i = 0, length = 0, j;
-igroup argums[] = {
-	{"%c", print_char}, {"%s", print_string},
-	{"%i", print_int}, {"%d", print_dec},
-	{"%%", print_percent}
+group argums[] = {
+	{"%c", print_char}, {"%i", print_int},
+       	{"%d", print_dec}, {"%%", print_percent}
 	};
 if (format == NULL)
 return (-1);
@@ -21,7 +20,7 @@ return (-1);
 A:
 while (format[i] != '\0')
 {
-j = 4;
+j = 3;
 while (j >= 4)
 {
 if (argums[j].spe[0] == format[i] && argums[j].spe[1] == format[i + 1])
