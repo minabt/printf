@@ -11,6 +11,7 @@ i = 1;
 power10 = 1;
 n1 = va_arg(params, int);
 mod = n1 % 10;
+n1 = n1 / 10;
 number = n1;
 if (mod < 0)
 {
