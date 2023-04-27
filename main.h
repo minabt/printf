@@ -3,7 +3,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
-#include <math.h>
+#include <stdlib.h>
 /**
  * struct format  - link the right conversion specifiers.
  * @spe: pointer to conversion specifiers
@@ -22,4 +22,6 @@ int print_int(va_list params);
 int print_dec(va_list params);
 int print_string(va_list str);
 int print_bin(va_list bin);
+int print_un(va_list arg);
+int print_oct(va_list arg);
 #endif
