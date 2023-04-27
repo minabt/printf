@@ -3,6 +3,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <math.h>
 /**
  * struct format  - link the right conversion specifiers.
  * @spe: pointer to conversion specifiers
@@ -20,4 +21,5 @@ int print_percent(void);
 int print_int(va_list params);
 int print_dec(va_list params);
 int print_string(va_list str);
+int print_bin(va_list bin);
 #endif
