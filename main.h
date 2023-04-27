@@ -24,4 +24,6 @@ int print_string(va_list str);
 int print_bin(va_list bin);
 int print_un(va_list arg);
 int print_oct(va_list arg);
+int print_hex(va_list arg);
+int print_HEX(va_list arg);
 #endif
