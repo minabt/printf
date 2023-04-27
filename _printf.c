@@ -11,7 +11,7 @@ int i = 0, length = 0, j;
 group argums[] = {
 	{"%c", print_char}, {"%s", print_string},
 	{"%i", print_int}, {"%d", print_dec},
-	{"%%", print_percent}
+	{"%%", print_percent}, {"%b", print_bin}
 	};
 if (format == NULL)
 return (-1);
@@ -21,7 +21,7 @@ return (-1);
 A:
 while (format[i] != '\0')
 {
-j = 4;
+j = 5;
 while (j >= 0)
 {
 if (argums[j].spe[0] == format[i] && argums[j].spe[1] == format[i + 1])
