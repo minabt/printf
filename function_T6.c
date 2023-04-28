@@ -33,8 +33,8 @@ return (b + 2);
 */
 int print_hex_pointer(unsigned long int c)
 {
-int i, j;
-int *array;
+long int i, j;
+long int *array;
 unsigned long int  h;
 i = 0;
 j = 0;
@@ -45,7 +45,7 @@ c = c / 16;
 j++;
 }
 j++;
-array = malloc(j *sizeof(int));
+array = malloc(j *sizeof(long int));
 if (h == 0)
 {
 _putchar(48);
@@ -58,7 +58,7 @@ h = h / 16;
 }
 for (i = j - 1; i >= 0; i--)
 {
-if (array[i] > 9)
+if (array[i] > 10)
 array[i] = 39 + array[i];
 _putchar(array[i] + '0');
 }
