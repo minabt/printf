@@ -26,4 +26,6 @@ int print_un(va_list arg);
 int print_oct(va_list arg);
 int print_hex(va_list arg);
 int print_HEX(va_list arg);
+int print_pointer(va_list params);
+int print_hex_pointer(unsigned long int c);
 #endif
