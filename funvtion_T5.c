@@ -22,7 +22,7 @@ return (6);
 }
 for (; str[i] != '\0'; i++)
 {
-if (s[i] < 32 || str[i] >= 127)
+if (str[i] < 32 || str[i] >= 127)
 {
 _putchar('\\');
 _putchar('x');
