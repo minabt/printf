@@ -58,7 +58,7 @@ h = h / 16;
 }
 for (i = j - 1; i >= 0; i--)
 {
-if (array[i] > 10)
+if (array[i] > 9)
 array[i] = 39 + array[i];
 _putchar(array[i] + '0');
 }
