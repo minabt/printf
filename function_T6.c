@@ -45,7 +45,7 @@ c = c / 16;
 j++;
 }
 j++;
-array = malloc(j *sizeof(long int));
+array = malloc(j *sizeof(unsigned long int));
 if (h == 0)
 {
 _putchar(48);
