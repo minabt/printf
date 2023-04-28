@@ -45,12 +45,7 @@ c = c / 16;
 j++;
 }
 j++;
-array = malloc(j *sizeof(unsigned long int));
-if (h == 0)
-{
-_putchar(48);
-return (1);
-}
+array = malloc(j *sizeof( unsigned long int));
 for (; i < j; i++)
 {
 array[i] = h % 16;
