@@ -13,7 +13,8 @@ group argums[] = {
 	{"%i", print_int}, {"%d", print_dec},
 	{"%%", print_percent}, {"%b", print_bin},
 	{"%u", print_un}, {"%o", print_oct},
-	{"%x", print_hex}, {"%X", print_HEX}
+	{"%x", print_hex}, {"%X", print_HEX},
+	{"%p", print_pointer}
 	};
 if (format == NULL)
 return (-1);
@@ -23,7 +24,7 @@ return (-1);
 A:
 while (format[i] != '\0')
 {
-j = 9;
+j = 10;
 while (j >= 0)
 {
 if (argums[j].spe[0] == format[i] && argums[j].spe[1] == format[i + 1])
