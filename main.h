@@ -28,4 +28,6 @@ int print_hex(va_list arg);
 int print_HEX(va_list arg);
 int print_pointer(va_list params);
 int print_hex_pointer(unsigned long int c);
+int print_S(va_list arg);
+int print_HEX_S(unsigned int n);
 #endif
