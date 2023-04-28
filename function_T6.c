@@ -45,11 +45,12 @@ c = c / 16;
 j++;
 }
 j++;
-array = malloc(j *sizeof( unsigned long int));
-if(!array) { 
-        _printf("malloc failed\n"); 
-        return -1;
-}	
+array = malloc(j *sizeof(unsigned long int));
+if (!array)
+{
+_printf("malloc failed\n");
+return (-1);
+}
 for (; i < j; i++)
 {
 array[i] = h % 16;
